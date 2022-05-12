@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import SignUp from '../views/SignUp.vue'
+import ChatBoxView from '../views/ChatBoxView.vue' 
+import GroupsView from '../views/GroupsView.vue'
+import JoinGroup from '../views/JoinGroup.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +13,26 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/signup',
+    name: 'SignUp',
+    component: SignUp
+  },
+  {
+    path: '/groups',
+    name: 'Groups',
+    component: GroupsView
+  },
+  {
+    path: '/joingroup',
+    name: 'Join',
+    component: JoinGroup
+  },
+  {
+    path: '/chatbox',
+    name: 'Chatbox',
+    component: ChatBoxView
   },
   {
     path: '/about',
