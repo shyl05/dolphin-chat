@@ -1,7 +1,16 @@
 # chat-app
 
-## Project setup
+Developed using : 
+
+FRONTEND - VUE 2 + VUETIFY
+
+BACKEND - EXPRESS JS + MONGOOSE + MONGO DB
+
+
+
+## Frontend Project setup
 ```
+cd .\chat-app\
 npm install
 ```
 
@@ -20,5 +29,18 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Backend Project setup
+1. Install Mongo DB
+2. Use Mongo DB Compass
+
+```
+cd .\chat-app\
+cd .\src\
+cd .\chat-express\
+cd .\myapp\
+npm install
+```
+### Compiles and hot-reloads for development
+```
+npm run start
+```
