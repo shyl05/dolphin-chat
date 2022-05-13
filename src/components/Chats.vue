@@ -56,7 +56,7 @@ export default {
   },
   created () {
     console.log(this.$route.params.id)
-    axios.get(`http://localhost:3088/chats/`,+this.$route.params.id)
+    axios.get(`http://localhost:3088/chats/`+this.$route.params.id)
     .then(response => {
       this.chats = response.data
       console.log(this.chats)

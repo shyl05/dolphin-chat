@@ -21,9 +21,9 @@ import axios from 'axios';
         }),
         methods:{
             joinRoom() {
-                this.chat.room = this.$route.params.id
+                this.chat.group = this.$route.params.id
                 this.chat.nickname = this.$route.params.nickname
-                this.chat.message = this.chat.nickname + ' join the room'
+                this.chat.message = this.chat.nickname + ' joined the room'
                 axios.post(`http://localhost:3088/chats`, this.chat)
                 .then(response => {
                     this.$router.push({
